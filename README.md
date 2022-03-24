@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Sia0Pol.github.io/rsschool-cv/cv
