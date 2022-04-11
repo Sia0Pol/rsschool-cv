@@ -1,0 +1,506 @@
+/*структура проекта*/
+
+
+html {
+    scroll-behavior: smooth;
+    height: 100vh;
+    text-decoration: none;
+}
+
+body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100hv;
+    margin: 0 auto;
+    flex-direction: column;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    
+    
+    background: #f1cdb3;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all 0.4s;
+}
+
+button {
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/*Лого + навигация*/
+
+.header {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    padding: 0 40px 0 40px;
+}
+
+.header .container {
+    padding-top: 60px;
+    background: url('/shelter/assets/images/start-screen-background.jpg') no-repeat;
+}
+
+.header_container {
+    width: 1200x;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.text_logo {
+    padding-bottom: 10px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    color: #F1CDB3;     
+}
+
+.text_logo a{
+    color: #F1CDB3; 
+}
+
+.subtitle_logo {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+
+.header_nav_buttons_text {
+    display: inline-block;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 160%;
+    margin-right: 35px;
+}
+
+.header_nav_buttons_text a {
+    color: #CDCDCD;
+}
+
+/*Титульная страница с пёселем*/
+.not_only {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    padding: 0 40px 0 40px;
+}
+
+main .container {
+    padding-top: 60px;
+    background: url('/shelter/assets/images/start-screen-background.jpg') no-repeat;
+}
+
+.not_only_container {
+    display: flex;
+    column-gap: 42px;
+    align-items: center;
+    justify-content: center;
+}
+
+.not_only_content{
+    padding: 163px 0 243px 0;
+}
+
+.not_only_text_block {
+    width: 460px;
+}
+
+.not_only_title {
+    color: #FFFFFF;
+}
+
+.not_only_title h1 {
+    width: 310px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57px;
+    text-align: left;
+    margin-bottom: 42px;
+}
+
+.not_only_subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    align-items: center;
+    margin-bottom: 42px;
+
+    color: #CDCDCD;
+}
+
+.button a {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+
+    color: #292929;
+}
+
+.not_only_button {
+    align-items: center;
+    position: absolute;
+    width: 207px;
+    border-radius: 100px;
+    line-height: 52px;
+    text-align: center;
+
+    background: #F1CDB3;
+}
+
+
+.not_only_button:hover {
+    color: rgb(241, 204, 177);
+	background: #efc2ace6;
+	box-shadow: inset 0 0 0 3px #F1CDB3;
+    transition: all 0.4s;
+}
+
+
+/*Информация про приют*/
+
+.about_shelter {
+    background-color: #FFFFFF;
+    height: 588px;
+    display: flex;
+    align-items: center;
+}
+
+.about_shelter_container {
+    display: flex;
+    column-gap: 120px;
+    padding: 0 175px 0 175px;
+    margin: 80px 40px 100px 40px;
+}
+
+.about_shelter_text {
+    width: 430px;
+}
+
+.about_shelter_container .about_shelter_title_text {
+    margin: 14px 60px 0 0;
+    letter-spacing: 0.06em;
+}
+
+.about_shelter_title_text {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+
+    color: #545454;
+}
+
+.about_shelter_subtitle {
+    padding: 25px 0 14px 0;
+    font-family: 'Arial';
+    font-size: 15px;
+    line-height: 24px;
+    color: #4C4C4C;
+}
+
+.about_shelter_subtitle p:first-child {
+    margin-bottom: 25px;
+}
+
+/*Список животных для усыновления*/
+
+.our_friends .container {
+    background: #F6F6F6;
+}
+
+section .container {
+    padding: 80px 0 100px 0;
+}
+
+.our_friends_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+}
+
+.our_friends_title {
+    width: 400px;
+    text-align: center;
+    color: #545454;
+}
+
+.our_friends_title h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    line-height: 45.5px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+}
+
+
+.our_friends_content {
+    display: flex;
+    column-gap: 53px;
+}
+
+.slide_button_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+
+    border: 2px solid #F1CDB3;
+}
+
+.slide_button:hover {
+    -moz-box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    transition: all 0.4s;
+}
+
+.right_button, .left_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 6px; 
+}
+
+.our_friends_cards {
+    display: flex;
+    column-gap: 90px;
+    flex-wrap: wrap;
+}
+
+.card_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding-bottom: 30px;
+
+    background: #FAFAFA;
+}
+
+.card_information:hover {
+    -moz-box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    transition: all 0.4s;
+}
+
+.card_name {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+}
+
+.card_information .button {
+    background: none;
+    border: 2px solid #f1cdb3;
+    width: 187px;
+    height: 52px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 52px;
+}
+
+.card_information .button:hover {
+    color: rgb(241, 204, 177);
+	background: rgba(243, 215, 201, 0.5);
+	box-shadow: inset 0 0 0 3px #F1CDB3;
+    transition: all 0.4s;
+}
+
+.our_friends_central_button .button {
+    width: 261px;
+    line-height: 52px;
+    border-radius: 100px;
+    text-align: center;
+    background: #F1CDB3;
+    transition: all 0.4s;
+}
+.our_friends_central_button .button:hover {
+    color: rgb(241, 204, 177);
+	background: rgba(243, 215, 201, 0.5);
+	box-shadow: inset 0 0 0 3px #F1CDB3;
+    transition: all 0.4s;
+}
+
+/*Раздел 'Помощь'*/
+
+.help_shelter {
+    height: 611px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.help_shelter .container{
+    padding: 0 !important;
+    height: 611px !important;
+}
+
+.help_shelter_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+    padding: 0 87px 0 87px; 
+}
+
+.help_shelter_title {
+    width: 420px;
+    text-align: center;
+    padding: 0 auto !important;
+    color: #545454;
+}
+
+.help_shelter_title h2{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+.help_rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 55px;
+}
+
+.help_top_row {
+    display: flex;
+    column-gap: 127px;
+}
+
+.help_top_row:first-child {
+    margin-right: -7px;
+}
+
+.help_top_row:last-child {
+    margin-left: -7px;
+}
+
+.help_item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center; 
+}
+
+.help_item_text{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+
+    color: #545454;
+}
+
+.help_bottom_row {
+    display: flex;
+    column-gap: 120px;
+}
+
+.help_item_icon button {
+    width: 90px;
+    height: 90px;
+    border-radius: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help_item_icon button:hover {
+    transform: translateY(-10px);
+    -moz-box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+
+/*Счет для пожертвований*/
+
+.donation_info .container {
+    background: #F6F6F6;
+}
+
+.donation_info_container {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center; 
+}
+
+.donation_info_photo {
+    padding: 10.5px 0 10.5px 0;
+}
+
+.donation_info_content {
+    width: 380px;
+}
+
+.donation_info_title h2 {
+    width: 300px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+}
