@@ -504,3 +504,72 @@ section .container {
 
     color: #545454;
 }
+
+.donation_info_text {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+}
+
+.donation_bank {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%; 
+    letter-spacing: 0.06em;
+
+    color: #545454;
+}
+
+.donation_item {
+    width: 350px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin: 19px 0 19px 0;
+    padding: 8px 15px 7px 15px;
+    border-radius: 9px;
+
+    background: #F1CDB3;
+}
+
+.donation_item:hover {
+    -moz-box-shadow: -1.5px -1.5px 16px 4px rgba(239, 216, 205, 0.9);
+    box-shadow: -1.5px -1.5px 16px 4px rgba(239, 216, 205, 0.9);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.donation_card_icon {
+    width: 30px;
+    height: 23px;
+    color: #292929;
+}
+
+.donation_card_number {
+    width: 300px;
+    height: 23px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+}
+
+.bank_information {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #B2B2B2;
+}
+
+/*Блок с контактами*/
+
