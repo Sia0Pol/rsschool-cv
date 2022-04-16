@@ -1,0 +1,336 @@
+/*структура проекта*/
+
+html {
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    
+    
+    background: #f1cdb3;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all 0.2s;
+}
+
+button {
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/*Лого + навигация*/
+header {
+    position: sticky;
+    top: 0;
+}
+
+.header {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    padding: 0 40px 0 40px;
+}
+
+.header .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+
+}
+
+.header_container {
+    width: 1200x;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.text_logo {
+    padding-bottom: 10px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;     
+}
+
+.text_logo a{
+    color: #545454;
+}
+
+.text_logo a:hover {
+    border-bottom: 2px solid #F1CDB3;
+    text-decoration: none;
+}
+
+.subtitle_logo {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: #292929;
+}
+
+.header_nav_buttons_text {
+    display: inline-block;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 160%;
+    margin-right: 35px;
+}
+
+.header_nav_buttons .active {
+    border-bottom: 2px solid #F1CDB3;
+    text-decoration: none;
+}
+
+.header_nav_buttons_text a:hover {
+    border-bottom: 2px solid #F1CDB3;
+    text-decoration: none;
+}
+
+.header_nav_buttons_text a {
+    color: #545454;
+}
+
+/*Список животных для усыновления*/
+.our_friends{
+    margin-top: -20px;
+    background: #F6F6F6;
+}
+
+.our_friends_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+    margin: 80px 40px 100px 40px;
+
+}
+
+.our_friends_title {
+    text-align: center;
+    width: 400px;
+
+    color: #545454;
+}
+
+.our_friends_title h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+.our_friends_cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+
+}
+
+.cards_row {
+    display: flex;
+    column-gap: 40px;
+}
+
+.card_information {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    padding-bottom: 30px;
+    background: #FAFAFA;
+    border-radius: 9px;
+}
+
+.card_information:hover {
+    -moz-box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    transition: all 0.4s;
+}
+
+.card_name {
+    width: 68px;
+    height: 23px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+}
+
+.card_information .button {
+    background: none;
+    border: 2px solid #F1CDB3;
+    width: 187px;
+    height: 52px;
+    border-radius: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 130%;
+
+}
+
+.button a {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #292929;
+}
+
+.card_information .button:hover {
+	background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+    transition: all 0.4s;
+}
+
+.card_information .button a:hover {
+	text-decoration: none;
+}
+
+.navigation_block .round_button {
+    border-radius: 100px;
+    height: 52px;
+    width: 52px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+}
+
+button.inactive {
+    border: 2px solid #CDCDCD !important;
+}
+
+button.number {
+    background: #F1CDB3;
+}
+
+button.number:hover {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+    transition: all 0.4s;
+}
+
+button.next {
+    border: 2px solid #F1CDB3;
+}
+
+button.next:hover {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+    transition: all 0.4s;
+}
+
+/*Блок с контактами*/
+
+.footer .container {
+    background: url('../../assets/images/footer-gradient-background.png') no-repeat;
+    padding-top: 40px;
+}
+
+.footer_container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    column-gap: 160px;
+    margin: 0 auto;
+    padding: 0px;
+
+}
+
+.footer_contacts, .footer_location {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    padding-top: 23px;
+}
+
+.footer_contacts_title, .footer_location_title {
+    display: flex;
+    align-items: flex-start;
+    width: 280px;
+
+}
+
+.footer_title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    padding: 0 auto;
+
+    color: #FFFFFF;
+}
+
+.footer_item {
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer_item_text {
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+.footer_item a {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+
+    color: #F1CDB3;
+}
