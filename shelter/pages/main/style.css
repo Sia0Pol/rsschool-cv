@@ -3,19 +3,20 @@
 
 html {
     scroll-behavior: smooth;
-    height: 100vh;
+    height: 100%;
     text-decoration: none;
 }
 
 body {
     
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100hv;
     margin: 0 auto;
+    padding: 0 auto;
+    align-content: center;
+    justify-content: center;
     flex-direction: column;
     font-family: Georgia, "Times New Roman", Times, serif;
+    min-width: 1280px;
     
     
     background: #f1cdb3;
@@ -27,7 +28,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     transition: all 0.2s;
 }
 
@@ -38,30 +39,26 @@ button {
 }
 
 .container{
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 0 auto;
+}
+
+section {
+    margin: 0 auto;
+    padding: 0 40px 0 40px;
 }
 
 /*Лого + навигация*/
 
 .header {
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-    padding: 0 40px 0 40px;
-}
-
-.header .container {
-    padding-top: 60px;
+    margin: 0 auto;
+    padding: 60px 40px 0 40px;
     background: url('../../assets/images/start-screen-background.jpg') no-repeat;
 }
 
 .header_container {
-    width: 1200x;
-    margin-left: 40px;
-    margin-right: 40px;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     
 }
@@ -73,8 +70,6 @@ button {
     font-weight: 400;
     font-size: 32px;
     line-height: 110%;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.06em;
 
     color: #F1CDB3;     
@@ -114,24 +109,19 @@ button {
     text-decoration: none;
 }
 
-.header_nav_buttons_text a:hover {
-    border-bottom: 2px solid #CDCDCD;
-    text-decoration: none;
-}
-
 .header_nav_buttons_text a {
     color: #CDCDCD;
 }
 
-/*Титульная страница с пёселем*/
-.not_only {
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-    padding: 0 40px 0 40px;
+.header_nav_buttons_text a:hover {
+    color: #FAFAFA; 
+    text-decoration: none;
 }
 
-main .container {
-    padding-top: 60px;
+/*Титульная страница с пёселем*/
+.not_only {
+    margin: 0 auto;
+    padding: 0 40px 0 40px;
     background: url('../../assets/images/start-screen-background.jpg') no-repeat;
 }
 
@@ -140,14 +130,11 @@ main .container {
     column-gap: 42px;
     align-items: center;
     justify-content: center;
+    margin-top: 60px;
 }
 
 .not_only_content{
     padding: 80px 0 243px 0;
-}
-
-.not_only_text_block {
-    width: 460px;
 }
 
 .not_only_title {
@@ -155,7 +142,7 @@ main .container {
 }
 
 .not_only_title h1 {
-    width: 310px;
+    max-width: 310px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 44px;
     font-weight: 400;
@@ -176,7 +163,18 @@ main .container {
     color: #CDCDCD;
 }
 
-.button a {
+.not_only_button {
+    position: absolute;
+    width: 207px;
+    border-radius: 100px;
+    line-height: 52px;
+    text-align: center;
+
+    background: #F1CDB3;
+    
+}
+
+.not_only_button a {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -188,20 +186,7 @@ main .container {
     color: #292929;
 }
 
-.not_only_button {
-    align-items: center;
-    position: absolute;
-    width: 207px;
-    border-radius: 100px;
-    line-height: 52px;
-    text-align: center;
-
-    background: #F1CDB3;
-}
-
-
 .not_only_button:hover {
-    color: rgb(241, 204, 177);
 	background: #FDDCC4;
     transition: all 0.4s;
 }
@@ -210,30 +195,28 @@ main .container {
 /*Информация про приют*/
 
 .about_shelter {
-    background-color: #FFFFFF;
-    height: 588px;
-    display: flex;
-    align-items: center;
+    background: #FFFFFF;
+}
+
+section .container {
+    padding: 77px 0 100px 0;
 }
 
 .about_shelter_container {
     display: flex;
     align-items: center;
-    width: 1200px;
-    height: 408px;
+    justify-content: center;
     column-gap: 120px;
-    padding: 0 175px 0 175px;
-    margin: 90px 40px 100px 40px;
+    margin: 0 auto;
 }
 
 .about_shelter_text {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 430px;
-    height: 380px;
+    max-width: 430px;
+    max-height: 380px;
     row-gap: 25px;
-    width: 430px;
 }
 
 .about_shelter_container .about_shelter_title_text {
@@ -256,6 +239,7 @@ main .container {
     font-size: 15px;
     line-height: 24px;
     margin-top: -15px;
+
     color: #4C4C4C;
 }
 
@@ -266,16 +250,7 @@ main .container {
 /*Список животных для усыновления*/
 
 .our_friends {
-    height: 877px;
-}
-
-.our_friends .container {
-    height: 877px;
     background: #F6F6F6;
-}
-
-section .container {
-    padding: 80px 0 100px 0;
 }
 
 .our_friends_container {
@@ -287,8 +262,8 @@ section .container {
 }
 
 .our_friends_title {
-    width: 400px;
     text-align: center;
+
     color: #545454;
 }
 
@@ -310,15 +285,16 @@ section .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -10px;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 .slide_button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
 
     border: 2px solid #F1CDB3;
@@ -334,14 +310,13 @@ section .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 14px;
-    height: 6px; 
+    max-width: 14px;
+    max-height: 6px; 
 }
 
 .our_friends_cards {
     display: flex;
     column-gap: 90px;
-    flex-wrap: wrap;
 }
 
 .card_information {
@@ -352,13 +327,12 @@ section .container {
     padding-bottom: 30px;
     border-radius: 9px;
 
-
     background: #FAFAFA;
 }
 
 .card_information:hover {
-    -moz-box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
-    box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: #FFFFFF;
     transition: all 0.4s;
 }
 
@@ -377,12 +351,23 @@ section .container {
 .card_information .button {
     background: none;
     border: 2px solid #f1cdb3;
-    width: 187px;
-    height: 52px;
+    width: 185px;
+    height: 50px;
     border-radius: 100px;
     text-align: center;
     line-height: 52px;
-    margin-top: -3px;
+    margin: 0 auto;
+}
+
+.button a{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #292929;
 }
 
 .card_information .button:hover {
@@ -408,10 +393,7 @@ section .container {
 /*Раздел 'Помощь'*/
 
 .help_shelter {
-    height: 611px;
     background: #FFFFFF;
-    display: flex;
-    align-items: center;
 }
 
 .help_shelter_container {
@@ -419,15 +401,13 @@ section .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -25px;
-    padding: 0 87px 0 87px;
-    row-gap: 30px; 
+    row-gap: 45px; 
 }
 
 .help_shelter_title {
-    width: 420px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
+    
     color: #545454;
 }
 
@@ -445,8 +425,7 @@ section .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 12px;
-    row-gap: 72px;
+    row-gap: 48px;
 }
 
 .help_top_row {
@@ -457,7 +436,7 @@ section .container {
 .help_item {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 10px;
     align-items: center; 
     justify-content: center;
 }
@@ -470,14 +449,14 @@ section .container {
     line-height: 115%;
     letter-spacing: 0.06em;
 
-
     color: #545454;
 }
 
 .help_bottom_row {
     display: flex;
     column-gap: 120px;
-    margin-top: -35px;
+    align-items: center;
+    justify-content: center;
 }
 
 .help_item_icon button {
@@ -491,25 +470,22 @@ section .container {
 
 .help_item_icon button:hover {
     transform: translateY(-10px);
-    -moz-box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
-    box-shadow: -1.5px -1.5px 16px 4px rgba(234, 174, 143, 0.9);
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     transition: all 0.5s ease-in-out 0s;
 }
 
 
 /*Счет для пожертвований*/
-.donation_info {
-    height: 457px;
-}
 
-.donation_info .container {
+.donation_info {
     background: #F6F6F6;
 }
 
 .donation_info_container {
     display: flex;
-    column-gap: 30px;
     justify-content: center; 
+    column-gap: 30px;
+    
 }
 
 .donation_info_photo {
@@ -520,6 +496,7 @@ section .container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    row-gap: 10px;
     max-width: 380px;
 }
 
@@ -547,10 +524,6 @@ section .container {
 .donation_bank {
     font-family: 'Georgia';
     font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 110%; 
-    letter-spacing: 0.06em;
 
     color: #545454;
 }
@@ -558,10 +531,10 @@ section .container {
 .donation_item {
     display: flex;
     align-items: center;
-    margin: 19px 0 19px 0;
-    max-width: 349px;
+    margin-bottom: 23px;
+    max-width: 320px;
     column-gap: 15px;
-    padding: 8px 15px 7px 15px;
+    padding: 10px 15px;
     border-radius: 9px;
 
     background: #F1CDB3;
@@ -575,6 +548,7 @@ section .container {
 .donation_card_icon {
     width: 30px;
     height: 23px;
+
     color: #292929;
 }
 
@@ -595,40 +569,48 @@ section .container {
     font-style: italic;
     font-weight: 400;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    max-height: 72px;
 
     color: #B2B2B2;
 }
 
 /*Блок с контактами*/
 
-.footer .container {
+.footer {
     background: url('../../assets/images/footer-gradient-background.png') no-repeat;
-    padding-top: 40px;
+    margin: 0 auto;
+    padding: 40px 40px 0px 40px;
 }
 
 .footer_container {
-    width: 1200px;
     display: flex;
-    justify-content: center;
-    column-gap: 160px;
-    margin: 0 auto;
-    padding: 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+.footer_text {
+    display:flex;
+    justify-content: center;
+    column-gap: 161px;
 }
 
 .footer_contacts, .footer_location {
     display: flex;
     flex-direction: column;
-    row-gap: 45px;
-    padding-top: 23px;
+    margin-top: 20px;
 }
 
-.footer_contacts_title, .footer_location_title {
-    display: flex;
-    align-items: flex-start;
-    width: 280px;
 
+.footer_contacts_title {
+    max-width: 280px;
+    margin-bottom: 45px;
+}
+
+.footer_location_title {
+    max-width: 280px;
+    margin-bottom: 40px;
 }
 
 .footer_title {
@@ -646,14 +628,22 @@ section .container {
 .footer_item {
     display: flex;
     column-gap: 20px;
-    align-items: flex-start;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.footer_contacts .footer_item {
+    margin-bottom: 40px;
+}
+
+.footer_location .footer_item {
+    margin-bottom: 30px;
 }
 
 .footer_item_text {
-    margin: 0 auto;
-    padding: 0 auto;
-
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .footer_item a {
