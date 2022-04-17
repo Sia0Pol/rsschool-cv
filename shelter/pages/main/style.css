@@ -892,8 +892,12 @@ section .container {
        column-gap: 40px;
     }
 
+    .burger_menu {
+        display: block;
+    }
+
     /*Титульная страница с песелем*/
-      .not_only {
+    .not_only {
         padding: 0px 10px 0px 10px;
         background: url('../../assets/images/start-screen-gradient-background 320.png') no-repeat;
     }
@@ -1163,10 +1167,6 @@ section .container {
     .footer_location_title {
         margin: 0 auto;
         margin-bottom: 40px;
-    }
-
-    .footer_location_title .footer_title {
-        ma
     }
 
 
